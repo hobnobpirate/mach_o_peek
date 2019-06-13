@@ -8,10 +8,10 @@ Welcome to Mach-O Peek's documentation!
    readme
    installation
    usage
-   modules
    contributing
    authors
    history
+   resources
 
 Indices and tables
 ==================
