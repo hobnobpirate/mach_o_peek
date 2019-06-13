@@ -13,6 +13,8 @@ Mach-O Peek
         :target: https://mach-o-peek.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+.. image:: https://codecov.io/gh/hobnobpirate/mach_o_peek/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/hobnobpirate/mach_o_peek
 
 
 
