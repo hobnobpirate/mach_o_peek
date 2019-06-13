@@ -1,0 +1,4 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}/docs",
+    "python.pythonPath": "/Users/hnp/Projects/mach_o_peek/.venv/bin/python3.7"
+}
