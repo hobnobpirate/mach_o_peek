@@ -12,8 +12,10 @@ coverage = "==4.5.1"
 twine = "==1.12.1"
 Sphinx = "==1.8.1"
 pylint = "*"
+doc8 = "*"
 
 [packages]
+click = "*"
 
 [requires]
 python_version = "3.7"

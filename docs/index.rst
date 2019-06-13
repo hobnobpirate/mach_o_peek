@@ -1,5 +1,5 @@
 Welcome to Mach-O Peek's documentation!
-======================================
+=======================================
 
 .. toctree::
    :maxdepth: 2
