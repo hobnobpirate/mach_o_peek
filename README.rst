@@ -18,7 +18,7 @@ Features
 
 * TODO
 
-.. include:: ./docs/installation.rst
+.. include:: HISTORY.rst
 
 Credits
 -------
