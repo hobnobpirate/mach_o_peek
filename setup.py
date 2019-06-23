@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = ['Click',]
 
 setup_requirements = [ ]
 
@@ -32,7 +32,7 @@ setup(
     description="Package to examine parts of the Mach-O file. Purely academic and not for operational use at this time.",
     entry_points={
         'console_scripts': [
-            'mach_o_peek=mach_o_peek.cli:main',
+            'mach-o-peek=mach_o_peek.cli:cli',
         ],
     },
     install_requires=requirements,

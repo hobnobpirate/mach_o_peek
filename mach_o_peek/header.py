@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
-"""macho_o_peek, Mach-O reader
+"""header.py, Mach-O reader
+
+This class defines the header for a Mach O file.
+Currently, only 64-bit Mach O files are processed.
 
 Copyright (c) 2019 Hobnobpirate <hobnonpirate@gmail.com>
 """
 
 import struct
-from pprint import pprint
 
 class Header:
 
@@ -28,9 +30,3 @@ class Header:
     def get_value(self, hexin):
         decoded = struct.unpack("<I", hexin)[0]
         return hex(decoded), decoded
-
-if __name__ == "__main__":
-    header = Header("Sample/cat")
-    header.read_header()
-    d = header.__dict__
-    pprint(d, indent=4, width=80)

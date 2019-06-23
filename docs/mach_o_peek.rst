@@ -4,14 +4,6 @@ mach\_o\_peek package
 Submodules
 ----------
 
-mach\_o\_peek.cli module
-------------------------
-
-.. automodule:: mach_o_peek.cli
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 mach\_o\_peek.mach\_o\_peek module
 ----------------------------------
 
