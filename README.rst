@@ -6,7 +6,7 @@ Mach-O Peek
 
 Package to examine parts of the Mach-O file.
 Purely academic and not for operational use at this time.
-Similar functionality to :shell:`otool -h BINARY`.
+Similar functionality to `otool -h BINARY`.
 
 * Free software: MIT license
 
