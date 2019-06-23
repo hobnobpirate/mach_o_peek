@@ -6,7 +6,11 @@ Mach-O Peek
 
 Package to examine parts of the Mach-O file.
 Purely academic and not for operational use at this time.
-Similar functionality to `otool -h BINARY`.
+Similar functionality to:
+
+.. code-block:: console
+
+    $ otool -h BINARY
 
 * Free software: MIT license
 
@@ -24,10 +28,26 @@ Features
 Installation
 ------------
 
+I recommended using a `Python virtual environment`_ with pipenv:
+
+.. code-block:: console
+
+    $ pipenv --three
+
+    $ pipenv shell
+
+Or with venv:
+
+.. code-block:: console
+
+    $ python3 -m venv mach_o_peek
+
+    $ source PATH/TO/VIRTUAL/ENVS/mach_o_peek/bin/activate
+
 From sources
 ************
 
-The sources for Mach-O Peek can be downloaded from the `Github repo`_.
+The sources for Mach-O Peek can be downloaded from the `Github repo`_:
 
 You can either clone the public repository:
 
@@ -46,6 +66,12 @@ Once you have a copy of the source, you can install it with:
 .. code-block:: console
 
     $ python setup.py install
+
+Or with pip:
+
+.. code-block:: console
+
+    $ pip install .
 
 Script will be installed as `mach-o-peek`.
 
@@ -93,3 +119,4 @@ the `audreyr/cookiecutter-pypackage`_ project template.
 .. _Mach O Executables: https://www.objc.io/issues/6-build-tools/mach-o-executables/
 .. _OSX ABI MachO File Format Reference: https://github.com/aidansteele/osx-abi-macho-file-format-reference
 .. _Kaitai Mach O: https://github.com/kaitai-io/kaitai_struct_formats/blob/master/executable/mach_o.ksy
+.. _Python Virtual Environment: https://docs.python.org/3/tutorial/venv.html
