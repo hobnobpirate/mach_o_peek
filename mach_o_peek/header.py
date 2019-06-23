@@ -9,21 +9,21 @@ Copyright (c) 2019 Hobnobpirate <hobnonpirate@gmail.com>
 
 import struct
 
-class Header:
 
+class Header:
     def __init__(self, infile):
         self.file = infile
 
     def read_header(self):
         with open(self.file, "rb") as f:
             try:
-                self.magic = self.get_value(f.read(4)) # loader.h
+                self.magic = self.get_value(f.read(4))  # loader.h
                 if self.magic[0] == "0xfeedfacf":
-                    self.cputype = self.get_value(f.read(4)) # machine.h
-                    self.cpusubtype = self.get_value(f.read(4)) # machine.h
-                    self.filetype = self.get_value(f.read(4)) # loader.h
-                    self.ncmds = self.get_value(f.read(4)) # loader.h
-                    self.sizeofcmds = self.get_value(f.read(4)) # loader.h
+                    self.cputype = self.get_value(f.read(4))  # machine.h
+                    self.cpusubtype = self.get_value(f.read(4))  # machine.h
+                    self.filetype = self.get_value(f.read(4))  # loader.h
+                    self.ncmds = self.get_value(f.read(4))  # loader.h
+                    self.sizeofcmds = self.get_value(f.read(4))  # loader.h
             except:
                 pass
 

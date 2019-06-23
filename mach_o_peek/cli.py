@@ -3,8 +3,9 @@ from pprint import pprint
 import click
 from .header import Header
 
+
 @click.command()
-@click.argument('binary')
+@click.argument("binary")
 def cli(binary):
     """Command line interface for Mach O Peek.
 
