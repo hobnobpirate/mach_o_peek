@@ -2,9 +2,6 @@
 Mach-O Peek
 ===========
 
-.. image:: https://img.shields.io/travis/hobnobpirate/mach_o_peek.svg
-        :target: https://travis-ci.org/hobnobpirate/mach_o_peek
-
 .. image:: https://readthedocs.org/projects/mach-o-peek/badge/?version=latest
         :target: https://mach-o-peek.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
@@ -20,6 +17,8 @@ Features
 --------
 
 * TODO
+
+.. include:: ./docs/installation.rst
 
 Credits
 -------
