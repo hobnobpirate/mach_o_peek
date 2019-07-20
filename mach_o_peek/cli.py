@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import click
 from pprint import pprint
+
 import click
-from .header import Header
+
+from mach_o_peek.header import Header
 
 
 @click.group()
@@ -24,12 +25,7 @@ def header(binary):
     """
     header = Header(binary)
     header.read_header()
-    print(f"File Name:\t{header.file}")
-    print(f"MagicType:\t{header.magic}")
-    print(f"File Type:\t{header.filetype}")
-    print(f"CPU Type:\t{header.cputype}")
-    print(f"Number of Cmds:\t{header.ncmds}")
-    print(f"Size of Cmds:\t{header.sizeofcmds}")
+    header.print_header()
 
 
 cli.add_command(header)

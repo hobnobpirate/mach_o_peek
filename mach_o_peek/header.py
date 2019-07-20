@@ -68,6 +68,7 @@ class Header:
         with open(self.file, "rb") as f:
             try:
                 self.magic = f.read(4)
+                breakpoint()
                 if self.magic == b"\xcf\xfa\xed\xfe":
                     self.fmt = "<I"
                     self.process_macho(f)
@@ -77,7 +78,7 @@ class Header:
                 pass
 
     def process_macho(self, f):
-        """Process a Mach O binary header"""
+        """Parse a Mach O binary header"""
         self.magic = MAGICTYPES[self.get_value(self.magic)]
         self.cputype = CPUTYPES[self.get_value(f.read(4))]  # machine.h
         self.cpusubtype = self.get_value(f.read(4))  # machine.h
@@ -89,3 +90,12 @@ class Header:
         """Decode a hex value"""
         decoded = struct.unpack(self.fmt, hexin)[0]
         return decoded
+
+    def print_header(self) -> None:
+        """Print Mach O binary header"""
+        print(f"File Name:\t{self.file}")
+        print(f"MagicType:\t{self.magic}")
+        print(f"File Type:\t{self.filetype}")
+        print(f"CPU Type:\t{self.cputype}")
+        print(f"Number of Cmds:\t{self.ncmds}")
+        print(f"Size of Cmds:\t{self.sizeofcmds}")
